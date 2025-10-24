@@ -5,7 +5,6 @@ File cấu hình cho project Rabin Voting (Python).
 - Hỗ trợ override bằng biến môi trường (ví dụ: RABIN_KEYS_DIR)
 - Hàm ensure_structure() để tạo các thư mục cần thiết (và đặt quyền cơ bản)
 - Hàm reload_from_env() để load lại config nếu cần (sau khi thay env)
-Chú ý: file này là Python (như bạn yêu cầu) để dễ import trực tiếp.
 """
 
 import os
