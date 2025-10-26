@@ -2,6 +2,7 @@
 
 ## Cấu trúc thư mục
 rabin_voting/
+├──elections # Chứa cấu hình của các cuộc bầu cử(thiết lập bởi authority qua giao diện)
 ├── interface/
 │ ├──gui_authority.py # Giao diện bên kiểm phiếu 
 │ ├──gui_voter.py # Giao diện bên cử tri
