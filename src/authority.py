@@ -131,8 +131,6 @@ def authority_decrypt_and_verify(auth_priv_file, vote_file):
         # Xóa file gốc trong thư mục 'votes/'
         p_vote.unlink() 
         
-        print(f"[INFO] Đã LƯU KẾT QUẢ vào: {dest_path}")
-        print(f"[INFO] Đã XÓA phiếu gốc: {vote_file}")
         
     except Exception as e:
         print(f"[CRITICAL ERROR] KHÔNG THỂ lưu kết quả/xóa file {vote_file}: {e}")

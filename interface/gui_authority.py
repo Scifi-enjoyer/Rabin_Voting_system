@@ -248,14 +248,14 @@ class AuthorityApp:
             messagebox.showinfo("Thành công", f"Đã lưu cấu hình bầu cử vào:\n{filename}")
             self.refresh_config_list()
         except Exception as e:
-            print(f"\n[ERROR] Lỗi khi lưu cấuHình: {e}")
+            print(f"\n[ERROR] Lỗi khi lưu cấu Hình: {e}")
             messagebox.showerror("Lỗi", f"Có lỗi xảy ra: {e}")
 
     # --- (Hàm run_verify_all giữ nguyên) ---
     def run_verify_all(self):
         """Bước C: Xử lý TẤT CẢ file trong 'votes/'."""
         self.clear_log()
-        print("--- [AUTH] Bước C: Bắt đầu kiểm tra tất cả phiếu MỚI... ---\n")
+        print("--- [AUTH] Bắt đầu kiểm tra phiếu ... ---\n")
         auth_priv_path = config.get_authority_priv_path()
         votes_dir = config.VOTES_DIR
         if not auth_priv_path.exists():
